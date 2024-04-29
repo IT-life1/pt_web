@@ -21,7 +21,7 @@
                 <a href="/registration.php">Зарегистрируйтесь</a> или <a href="/login.php">войдите</a>, чтобы просматривать контент!
             <?php
             } else {
-                $link = new mysqli('127.0.0.1', 'root', 'sova', 'first');
+                $link = new mysqli('db', 'root', 'sova', 'first');
 
                 $sql = "SELECT * FROM posts";
                 $res = mysqli_query($link, $sql);

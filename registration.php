@@ -30,7 +30,7 @@
 
 <?php
 require_once('db.php');
-$link = new mysqli('127.0.0.1', 'root', 'sova', 'first');
+$link = new mysqli('db', 'root', 'sova', 'first');
 echo "Connected successfully";
 if (isset($_COOKIE['User'])) {
     header("Location: login.php");
